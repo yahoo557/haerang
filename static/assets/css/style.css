@@ -1415,7 +1415,8 @@ section {
 }
 .slider-img{
   position:absolute;
-  height: 100vh;
+  margin-top: 5vh;
+  height: 88vh;
   width: 100vw;
 }
 .bullets{
