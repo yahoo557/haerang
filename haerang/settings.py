@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$km#hyv#n#-iyot*(x-e_-ju3%!5k@0p*+30&7nw54+_rwv=w%
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com','13.125.247.147',"ap-northeast-2.compute.amazonaws.com:8080/"]
-
+# ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -76,13 +76,12 @@ WSGI_APPLICATION = 'haerang.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# if ON_HEROKU:
+#     DATABASE_URL = 'postgresql://<postgresql>'
+# else:
+DATABASE_URL = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
-    }
-}
+DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 
 # Password validation

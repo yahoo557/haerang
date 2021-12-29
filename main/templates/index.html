@@ -1,175 +1,151 @@
+{% block content %}
 {% load static %}
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>해랑</title>
-    
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
-    <link
-      href="{% static 'assets/img/apple-touch-icon.png' %}"
-      rel="apple-touch-icon"
-    />
+  <title>해랑</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}"
-      rel="stylesheet"
-    />
-    <link
-      href="{% static 'assets/vendor/icofont/icofont.min.css' %}"
-      rel="stylesheet"
-    />
-    <link
-      href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}"
-      rel="stylesheet"
-    />
-    <link
-      href="{% static 'assets/vendor/venobox/venobox.css' %}"
-      rel="stylesheet"
-    />
-    <link
-      href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}"
-      rel="stylesheet"
-    />
-    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet" />
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
 
-    <!-- Template Main CSS File -->
-    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- =======================================================
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+
+  <!-- =======================================================
   * Template Name: Ninestars - v2.3.1
   * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  </head>
+</head>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div class="container-fluid d-flex">
-        <div class="logo mr-auto">
-          <h1 class="text-light" >
-            <a href="{% url 'main' %}"
-              ><img
-                src="{% static 'assets/img/haerang_logo.png' %}"
-                alt=""
-                width="70vw"
-            />
-            
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex">
+      <div class="logo mr-auto">
+        <h1 class="text-light">
+          <a href="{% url 'main' %}"><img src="{% static 'assets/img/haerang_logo.png' %}" alt="" width="70vw" />
+
           </a>
-          
-          </h1>
-          
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
-        
-        <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <!-- <li class="active"><a href="index.html">Home</a></li> -->
-            <li><a href="#slider">홈</a></li>
-            <li><a href="#about">회사소개</a></li>
-            <!-- <li><a href="#team">대표의 한마디</a></li> -->
-            <li><a href="#services">서비스</a></li>
-            <li><a href="#clients">가맹점현황</a></li>
-            <li><a href="#contact">고객센터</a></li>
-          </ul>
-        </nav>
-        <!-- .nav-menu -->
-      </div>
-    </header>
-    <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <div id="slider" class="slider">
-      <input type="radio" name="slide" id="slide1" checked>
-      <input type="radio" name="slide" id="slide2">
-      <input type="radio" name="slide" id="slide3">
-      <input type="radio" name="slide" id="slide4">
-      <ul id="imgholder" class="imgs">
-          <li><img class = "slider-img" id = "slider-img-1" src="{% static 'assets/img/LTE_7260-ok copy.jpg' %}">
-            
-          </li>
-          <li><img class = "slider-img" id = "slider-img-2" src="{% static 'assets/img/LTE_7268-ok copy.jpg' %}"></li>
-          <li><img class = "slider-img" id = "slider-img-3" src="{% static 'assets/img/LTE_7456-ok copy.jpg' %}"></li>
-          <li><img class = "slider-img" id = "slider-img_4" src="{% static 'assets/img/model_result.jpg' %}"></li>
-      </ul>
-      <div class="bullets">
-          <label for="slide1">&nbsp;</label>
-          <label for="slide2">&nbsp;</label>
-          <label for="slide3">&nbsp;</label>
-          <label for="slide4">&nbsp;</label>
+        </h1>
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          
+          <li class="active"><a href="#slider">홈</a></li>
+          <li><a href="#about">회사소개</a></li>
+          <!-- <li><a href="#team">대표의 한마디</a></li> -->
+          <li><a href="#services">서비스</a></li>
+          <li><a href="#clients">가맹점현황</a></li>
+          <li><a href="#contact">고객센터</a></li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
     </div>
-  </section>
-    
-    <!-- End Hero -->
+  </header>
+  <!-- End Header -->
 
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div
-              class="
+  <!-- ======= Hero Section ======= -->
+  <div id="slider" class="slider">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+    <ul id="imgholder" class="imgs">
+      <li><img class="slider-img" id="slider-img-1" src="{% static 'assets/img/LTE_7260-ok copy.jpg' %}">
+
+      </li>
+      <li><img class="slider-img" id="slider-img-2" src="{% static 'assets/img/LTE_7268-ok copy.jpg' %}"></li>
+      <li><img class="slider-img" id="slider-img-3" src="{% static 'assets/img/LTE_7495-ok copy.png' %}"></li>
+      <li><img class="slider-img" id="slider-img_4" src="{% static 'assets/img/LTE_7456-ok copy.png' %}"></li>
+    </ul>
+    <div class="bullets">
+      <label for="slide1">&nbsp;</label>
+      <label for="slide2">&nbsp;</label>
+      <label for="slide3">&nbsp;</label>
+      <label for="slide4">&nbsp;</label>
+    </div>
+  </div>
+
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="
                 col-lg-5
                 d-flex
                 align-items-center
                 justify-content-center
                 about-img
-              "
-            >
+              ">
             <!-- src="{% static 'assets/img/meal_dish_removed.png' %}" -->
-              <img
-                
-                src="{% static 'assets/img/model2_result.png' %}"
-                class="img-fluid"
-                alt=""
-                data-aos="zoom-in"
-              />
-            </div>
+            <img src="{% static 'assets/img/model2_result.png' %}" class="img-fluid" alt="" data-aos="zoom-in" />
+          </div>
 
-            <div class="col-lg-6 pt-5 pt-lg-0">
-              <br />
-              <br />
-              <br />
-              <br />
-              <h3 data-aos="fade-up">해초과메기는</h3>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <br />
+            <br />
+            <br />
+            <br />
+            <h3 data-aos="fade-up">해초과메기는</h3>
 
-              <p data-aos="fade-up" data-aos-delay="100">
-                손질에서부터 세척, 선별까지 깐깐한 고집과 기술력으로 최상품
-                과메기를 생산, 유통하여 몸에 좋고 귀한 청정 해초와 함께 손님상에
-                제공하는 국내유일 ,최초의 과메기 전문점입니다.
-              </p>
-              <div class="row">
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-receipt"></i>
-                  <h4>방송출연경력</h4>
-                  <p>SBS 생방송 투데이, 서경방송 우리가간다, KNN 식객</p>
-                </div>
+            <p data-aos="fade-up" data-aos-delay="100">
+              손질에서부터 세척, 선별까지 깐깐한 고집과 기술력으로 최상품
+              과메기를 생산, 유통하여 <br>몸에 좋고 귀한 청정 해초와 함께 손님상에
+              제공하는 국내유일 ,최초의 과메기 전문점입니다.
+            </p>
+            <div class="row">
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-receipt"></i>
+                <h4>방송출연경력</h4>
+              </div>
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                <ul style="list-style: none;">
+                  <li><h7>SBS 생방소 투데이</h7></li>
+                  <li><h7>서경방송 우리가간다</h7></li>
+                  <li><h7>KNN 식객</h7></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End About Section -->
-      <!-- ======= Team Section ======= -->
-      <!-- <section id="team" class="team">
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team"></section>
+    <!-- <section id="team" class="team">
         <div class="container">
           <div class="section-title" data-aos="fade-up">
             <h2>올리는말씀</h2>
@@ -190,8 +166,8 @@
                 />
                 <div class="member-info">
                   <div class="member-info-content">
-                    <h4>조직원1</h4>
-                    <span>조직원 1 직급</span>
+                    <h4>대표의 한마디</h4>
+                    <span>대표</span>
                   </div>
                   <div class="social">
                     <a href=""><i class="icofont-twitter"></i></a>
@@ -205,256 +181,236 @@
           </div>
         </div>
       </section> -->
-      <!-- End Team Section -->
+    <!-- End Team Section -->
 
-      
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services section-bg">
-        <div class="container">
-          <div class="section-title" data-aos="fade-up">
-            <h2>서비스</h2>
-            <p>서비스 소개 간단한 슬로건</p>
-          </div>
 
-          <div class="row">
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <img
-                  src="assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <p class="description">건조장 소개</p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <img
-                  src="assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <p class="description">해초 건조장 소개</p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <img
-                  src="assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <p class="description">해초과메기 초장 소개</p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="400"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <img
-                  src="assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <p class="description">해초과메기 특허장</p>
-              </div>
-            </div>
-          </div>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>서비스</h2>
+          <p>서비스 소개 간단한 슬로건</p>
         </div>
-      </section>
-      <!-- End Services Section -->
 
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients section-bg">
-        <div class="container">
-          <div class="section-title" data-aos="fade-up">
-            <h2>가맹점</h2>
-            <p>전국 해초 과메기 입점 현황</p>
-            <h2>당일 손질한 과메기를 가까운 가맹정에서 만나볼수 있습니다.</h2>
-          </div>
-          <div id="map" style="width: 750px; height: 600px"></div>
-          <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=acf8c2adcf47da33fbdcff1e1adeb7bc"></script>
-          <script>
-            var mapContainer = document.getElementById("map"),
-              mapOption = {
-                center: new kakao.maps.LatLng(35.04975, 128.05491),
-                level: 13,
-                mapTypeId: kakao.maps.MapTypeId.ROADMAP,
-              };
-
-            var map = new kakao.maps.Map(mapContainer, mapOption);
-            var marker = new kakao.maps.Marker({
-              position: map.getCenter(),
-            });
-
-            marker.setMap(map);
-          </script>
-        </div>
-      </section>
-      <!-- End Clients Section -->
-
-      <!-- ======= Contact Us Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="section-title" data-aos="fade-up">
-            <h2>문의사항</h2>
-            <h6>
-              체인 및 계약 관련 문의는 양식을 작성하시거나 고객센터 번호로 전화
-              부탁드리겠습니다.
-            </h6>
-          </div>
-
-          <div class="row">
-            <div
-              class="col-lg-5 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="info">
-                <div class="address">
-                  <i class="icofont-google-map"></i>
-                  <h4>찾아오시는길</h4>
-                  <p>경상남도 진주시 망경동 122-15</p>
-                </div>
-
-                <div class="email">
-                  <i class="icofont-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
-                </div>
-
-                <div class="phone">
-                  <i class="icofont-phone"></i>
-                  <h4>전화번호:</h4>
-                  <p>055-758-7894</p>
-                </div>
-
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.8273659842375!2d128.0782663152764!3d35.18585506458706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356efc126c9d275d%3A0xfa8e9500271429b9!2z6rK97IOB64Ko64-EIOynhOyjvOyLnCDrp53qsr3rj5kgMTIyLTE1!5e0!3m2!1sko!2skr!4v1631815635153!5m2!1sko!2skr"
-                  frameborder="0"
-                  style="border: 0; width: 100%; height: 290px"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      data-rule="minlen:4"
-                      data-msg="Please enter at least 4 chars"
-                    />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      data-rule="email"
-                      data-msg="Please enter a valid email"
-                    />
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="name">Subject</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 8 chars of subject"
-                  />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <label for="name">Message</label>
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="10"
-                    data-rule="required"
-                    data-msg="Please write something for us"
-                  ></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <img src="{% static 'assets/img/drying1.jpeg' %}" class="img-fluid" alt="" />
+              <p class="description">건조장 소개</p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- End Contact Us Section -->
-    </main>
-    <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-newsletter" data-aos="fade-up">
-        <div class="container">
-          <!-- <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <img src="{% static 'assets/img/haecho_processing1.jpeg' %}" class="img-fluid" alt="" />
+              <p class="description">해초 건조장 소개</p>
+            </div>
           </div>
-        </div> -->
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <img src="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="" />
+              <p class="description">해초과메기 초장 소개</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <img src="{% static 'assets/img/authorized_contract.jpeg' %}" class="img-fluid" alt="" />
+              <p class="description">해초과메기 특허장</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- End Services Section -->
 
-      
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>가맹점</h2>
+          <p>전국 해초 과메기 입점 현황</p>
+
+        </div>
+        <div class="section-body" style="display: grid; grid-template-columns: 1fr 2fr;" data-aos="fade-up">
+          <div class="section-body-content">
+            <div id="map" style="width: 30vw; height: 30vw; border-radius: 15px;"></div>
+            <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=acf8c2adcf47da33fbdcff1e1adeb7bc"></script>
+            <script>
+              var mapContainer = document.getElementById("map"),
+                mapOption = {
+                  center: new kakao.maps.LatLng(35.04975, 128.05491),
+                  level: 13,
+                  mapTypeId: kakao.maps.MapTypeId.ROADMAP,
+                };
+
+              var map = new kakao.maps.Map(mapContainer, mapOption);
+              var marker = new kakao.maps.Marker({
+                position: map.getCenter(),
+              });
+
+              marker.setMap(map);
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+      mapOption = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };  
+
+// 지도를 생성합니다    
+        var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+// 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new kakao.maps.services.Geocoder();
+
+// 주소로 좌표를 검색합니다
+        geocoder.addressSearch('제주특별자치도 제주시 첨단로 242', function(result, status) {
+
+    // 정상적으로 검색이 완료됐으면 
+        if (status === kakao.maps.services.Status.OK) {
+
+        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+        // 결과값으로 받은 위치를 마커로 표시합니다
+        var marker = new kakao.maps.Marker({
+            map: map,
+            position: coords
+        });
+
+        // 인포윈도우로 장소에 대한 설명을 표시합니다
+        var infowindow = new kakao.maps.InfoWindow({
+            content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>'
+        });
+        infowindow.open(map, marker);
+
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        map.setCenter(coords);
+    } 
+});    
+             
+            </script>
+          </div>
+          <div class="container">
+          <p>당일 손질한 과메기를 가까운 가맹점에서 만나볼수 있습니다.</p>
+            <div id ="address">
+            <table>
+              <tr>
+                <th>상호명</th>
+                <th>주소</th>
+              </tr>
+              {% for address in addresses.all %}
+              <tr>
+                <td><a>{{ address.name }}</a></td>
+                <td><a>{{ address.address }}</a></td>
+              </tr>
+              {% endfor %}
+            {% endblock %}
+            </table>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- End Clients Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>문의사항</h2>
+          <h6>
+            체인 및 계약 관련 문의는 양식을 작성하시거나 고객센터 번호로 전화
+            부탁드리겠습니다.
+          </h6>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>찾아오시는길</h4>
+                <p>경상남도 진주시 망경동 122-15</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>전화번호:</h4>
+                <p>055-758-7894</p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.8273659842375!2d128.0782663152764!3d35.18585506458706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356efc126c9d275d%3A0xfa8e9500271429b9!2z6rK97IOB64Ko64-EIOynhOyjvOyLnCDrp53qsr3rj5kgMTIyLTE1!5e0!3m2!1sko!2skr!4v1631815635153!5m2!1sko!2skr"
+                frameborder="0" style="border: 0; width: 100%; height: 290px" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email"
+                    data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4"
+                  data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required"
+                  data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Us Section -->
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-newsletter" data-aos="fade-up">
+      <div class="container">
+
+      </div>
+    </div>
+
+
     <!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
@@ -471,5 +427,6 @@
 
     <!-- Template Main JS File -->
     <script src="{% static 'assets/js/main.js' %}"></script>
-  </body>
+</body>
+
 </html>

@@ -79,8 +79,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 15px 0;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  
 }
-
+#header-slogan{
+  color: black;
+  font-size: 3px
+}
 #header .logo h1 {
   font-size: 30px;
   margin: 0;
@@ -902,7 +906,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #eb5d1e;;
   padding: 60px 0;
 }
 
@@ -1389,81 +1393,9 @@ section {
     padding: 3px 0;
   }
 }
-.slider{
-  position: relative;
-  margin-top: 72px;
-  height: 100vh;
-  width: 100vw;
-  padding : 0;
-  margin : 0;
-}
-.slider input[type=radio]{
-  display: none;
-}
-.slider ul{
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-.slider ul.imgs li{
-  position:absolute;
-  opacity: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  transition: 1s;
-}
-.slider-img{
-  position:absolute;
-  margin-top: 5vh;
-  height: 88vh;
-  width: 100vw;
-}
-.bullets{
-  position:absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 20px;
-  z-index: 2;
-}
-.bullets label{
-  display: inline-block;
-  border-radius: 50%;
-  background-color: rgba(0,0,0,0.55);
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
-  background-color: #fff;
-}
-.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
-  background-color: #fff;
-}
-.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
-  background-color: #fff;
-}
-.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
-  background-color: #fff;
-}
 
-.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
-  opacity: 1;
-  transition: 1s;
-  z-index: 1;
-}
-.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
-  opacity: 1;
-  transition: 1s;
-  z-index: 1;
-}
-.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
-  opacity: 1;
-  transition: 1s;
-  z-index: 1;
-}
-.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
-  opacity: 1;
-  transition: 1s;
-  z-index: 1;
+#address{
+  
+  height: 40vh;
+  overflow-y: auto;
 }
